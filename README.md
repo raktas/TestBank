@@ -8,17 +8,16 @@ Link: https://www.youtube.com/watch?v=SgQhwtIoQ7o&t=190s
 
 
 For those who want to contribute questions:
-Try to stick to the general format in the quiz4_TFMC file. The question file structure needs to be cleaned up a bit
 
-Ideally there will be
-Chapter_4_questions
-Chapter_5_questions
-Chapter_6_questions
+Try to stick to the general format in the Chapter_4_questions file. The question file structure needs to be cleaned up a bit
 
 Right now the app program works with the following format
 
 Question
+
 Answer
+
 Question
+
 Answer
 
