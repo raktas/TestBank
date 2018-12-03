@@ -1,26 +1,12 @@
 from time import sleep
 import os
+import json
 
 #-------------------------------------------------------------------------------------------------
 # Credits: I would like to give credit to Mike Dane as I build this app from one of his videos. 
 # Original Author: Mike Dane - Youtube Channel for training videos 
 # Link: https://www.youtube.com/watch?v=SgQhwtIoQ7o&t=190s
 #-------------------------------------------------------------------------------------------------
-
-
-def question_key_gen(data_bank):
-    with open(data_bank, 'r') as f:
-        bank = {}
-        question: str = f.readline().rstrip()
-        question = question.replace('\\n', '\n')
-        answer: str = f.readline().rstrip()
-        while question != 'EOF':
-            bank[question] = answer
-            question = f.readline().rstrip()
-            question = question.replace('\\n', '\n')
-            answer = f.readline().rstrip()
-        f.close()
-        return bank
 
 
 def intro():
@@ -31,40 +17,62 @@ def intro():
 
 def test_select():
     chapter = input('Enter Chapter: ')
-    filename_bank = 'Chapter_'+str(chapter)+'_questions'
-    question_key = question_key_gen(filename_bank)
+    filename_bank = 'Chapter_'+str(chapter)+'_questions.json'
+    with open(filename_bank) as f:
+        question_key = json.load(f)
     return question_key
 
-def run_test(question_key):
-    score = 0
-    for question, answer in question_key.items():
+def clear():
         if os.name == 'nt':
             os.system("cls") # clears the screen must use import os
         else:
             os.system('clear')
         sleep(1)
-        print(str(question))
+    
+
+def run_MC_test(question_key):
+    score = 0
+    question_count = 0
+    for question in question_key['t/f']:
+        question_count += 1
+        clear()
+        print(question['question'])
+        for option in question:
+            if str(option[:3]) == 'opt':
+                print(question[option])
         user_answer = input('\n :: ')
-        if os.name == 'nt':
-            os.system("cls") # clears the screen must use import os
-        else:
-            os.system('clear')
-        if user_answer == answer or user_answer == answer.lower():
+        clear()
+        if user_answer == question['answer'] or user_answer == question['answer'].lower():
             score += 1
-            print("\nThe Answer: " + answer + " Correct\n\n-----------------------------------------------------\n\n")
+            print("\nThe Answer: " + question['answer'] + " Correct\n\n-----------------------------------------------------\n\n")
             sleep(3)
         else:
-            print("\nThe Answer: " + answer + " Incorrect\n\n-----------------------------------------------------\n\n")
+            print("\nThe Answer: " + question['answer'] + " Incorrect\n\n-----------------------------------------------------\n\n")
+            sleep(3)
+    for question in question_key['mc']:
+        question_count += 1
+        clear()
+        print(question['question'])
+        for option in question:
+            if str(option[:3]) == 'opt':
+                print(question[option])
+        user_answer = input('\n :: ')
+        clear()
+        if user_answer == question['answer'] or user_answer == question['answer'].lower():
+            score += 1
+            print("\nThe Answer: " + question['answer'] + " Correct\n\n-----------------------------------------------------\n\n")
+            sleep(3)
+        else:
+            print("\nThe Answer: " + question['answer'] + " Incorrect\n\n-----------------------------------------------------\n\n")
             sleep(3)
     
     print("\n\n\n\n")
-    if os.name == 'nt':
-        os.system("cls") # clears the screen must use import os
-    else:
-        os.system('clear')
-    print("You got " + str(score) + "/" + str(len(questions)) + "correct")
+    clear()
+    print("You got " + str(score) + "/" + str(question_count) + "correct")
 
+def run_vocab_test():
+    print('Welcom to the Vocab Section')
 
 intro()
 question_key = test_select()
-run_test(question_key)
+run_MC_test(question_key)

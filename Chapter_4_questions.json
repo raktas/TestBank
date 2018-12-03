@@ -1,0 +1,154 @@
+{
+    "t/f" : [
+	{
+	    "question" : "1. With a virtual-circuit network layer, packet switches are involved in virtual circuit setup, and each packet switch it aware of the VCs passing through it.",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "T"
+	},
+	{
+	    "question" : "2. With a datagram network layer, each packet carries the address of the destination host.",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "T"
+	},
+	{
+	    "question" : "3. In a distance-vector routing algorithm, each node has a map of the entire network and determines the shortest path from itself to all other nodes in the network.",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "T"
+	},
+	{
+	    "question" : "4. In the BGP routing algorithm, each AS advertises to its neighbors its estimates of the shortest distances from the AS to all possible destination ASs.",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "F"
+	},
+	{
+	    "question" : "5. OSPF uses BGP for routing among areas.",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "F"
+	},
+	{
+	    "question" : "6. Every autonomous system must use the same intra-autonomous system routing algorithm.",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "F"
+	},
+	{
+
+	    "question" : "7. Suppose the computer in your office has been configured with an IP address, and you move (along with your computer) to an office down the hall. If after the move your computer is connected to the same IP network, then it is not necessary to reconfigure the IP address in your computer.",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "T"
+	},
+	{
+	    "question" : "8. Single-homed hosts have one interface and routers typically have two or more interfaces.",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "T"
+	},
+	{
+	    "question" : "9. A gateway router must run both an intra-AS routing algorithm and an inter-AS routing algorithm.",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "T"
+	},
+	{
+	    "question" : "10. The network portion of an IP address is the same for all the hosts on the same IP network.",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "T"
+	},
+	{
+	    "question" : "11. NAT is known as a 'plug-n-play' or 'zero-conf' protocol",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "F"
+	}
+    ],
+    "mc" : [
+	{
+	    "question" : "12. Which of the following are properties of link-state algorithms.",
+	    "option1" : "A. after the kth iteration, the least cost paths are known to k nodes",
+	    "option2" : "B. It requires the source node to know the costs between every pair of adjacent nodes in the graph",
+	    "option3" : "C. It determines the shortest path from the source node to all other nodes.",
+	    "option4" : "D. All of the above",
+	    "answer" : "D"
+	},
+	{
+	    "question" : "13. In routing among AS's, which of the following issues are dominant",
+	    "option1" : "A. Number of AS's traversed",
+	    "option2" : "B. policy",
+	    "option3" : "C. Current congestion levels",
+	    "option4" : "D. Geographical distance between AS's",
+	    "answer" : "B"
+	},
+	{
+	    "question" : "14. An application generates a 60 byte packet. This chunk is then sent to the transport layer and then the network layer. At this point, what percentage of the bytes in the datagram are the original application data?",
+	    "option1" : "A. 20%",
+	    "option2" : "B. 60%",
+	    "option3" : "C. 80%",
+	    "option4" : "D. 40%",
+	    "answer" : "B"
+	},
+	{
+	    "question" : "15. The maximum amount of data that a _______ layer frame can carry is called Maximum Transmission Unit or MTU.",
+	    "option1" : "A. Network",
+	    "option2" : "B. Physical",
+	    "option3" : "C. Link",
+	    "option4" : "D. Application",
+	    "answer" : "C"
+	},
+	{
+	    "question" : "16.According to the classful IP addressing schema, which of the following IP address belongs to the class-B IP address range",
+	    "option1" : "A. 126.66.254.30",
+	    "option2" : "B. 201.42.64.34",
+	    "option3" : "C. 156.11.24.111",
+	    "option4" : "D. 194.88.34.22",
+	    "answer" : "C"
+	},
+	{
+	    "question" : "17. The role of a routing table is to _______",
+	    "option1" : "A. transfer a packet from input link of a router to the appropriate outgoing link of a router",
+	    "option2" : "B. determine the end-to-end path that packet takes from source to destination",
+	    "option3" : "C. make sure all packets have arrived in correct sequence",
+	    "option4" : "D. none of the above options",
+	    "answer" : "B"
+	},
+	{
+	    "question" : "18. The ICMP protocol",
+	    "option1" : "A. runs on top of UDP",
+	    "option2" : "B. runs on top of IP",
+	    "option3" : "C. runs on top of TCP",
+	    "option4" : "D. none of the above",
+	    "answer" : "B"
+	},
+	{
+	    "question" : "19. In a router, queuing can occur",
+	    "option1" : "A. In the switching medium",
+	    "option2" : "B. In the output ports",
+	    "option3" : "C. In the input ports",
+	    "option4" : "D. Both B and C",
+	    "answer" : "D"
+	},
+	{
+	    "question" : "20. Which of the following switching mediums allow more than one packets to be forwarded from an input port to their appropriate output port",
+	    "option1" : "A. Switching via Memory",
+	    "option2" : "B. Switching via a bus",
+	    "option3" : "C. Switching via a crossbar",
+	    "option4" : "D. Switching via multiplexing",
+	    "answer" : "C"
+	},
+	{
+	    "question" : "21. IPv4 and IPv6 addresses have",
+	    "option1" : "A. 32 and 128 bit lengths respectively",
+	    "option2" : "B. 24 and 64 bit lengths respectively",
+	    "option3" : "C. /32 and /128 bit lengths respectively",
+	    "option4" : "D. /24 and /64 bit lengths respectively",
+	    "answer" : "A"
+	}
+    ]
+
+}
