@@ -1,0 +1,138 @@
+{
+    "t/f" : [
+	{
+	    "question" : "1. With a virtual-circuit network layer, packet switches are involved in virtual circuit setup, and each packet switch it aware of the VCs passing through it.",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "T"
+	},
+	{
+	    "question" : "2. With a datagram network layer, each packet carries the address of the destination host.",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "T"
+	},
+	{
+	    "question" : "3. In a distance-vector routing algorithm, each node has a map of the entire network and determines the shortest path from itself to all other nodes in the network.",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "T"
+	},
+	{
+	    "question" : "4. In the BGP routing algorithm, each AS advertises to its neighbors its estimates of the shortest distances from the AS to all possible destination ASs.",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "F"
+	},
+	{
+	    "question" : "5. OSPF uses BGP for routing among areas.",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "F"
+	},
+	{
+	    "question" : "6. Every autonomous system must use the same intra-autonomous system routing algorithm.",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "F"
+	},
+	{
+	    "question" : "7. Suppose the computer in your office has been configured with an IP address, and you move (along with your computer) to an office down the hall. If after the move your computer is connected to the same IP network, then it is not necessary to reconfigure the IP address in your computer.",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "T"
+	},
+	{
+	    "question" : "8. Single-homed hosts have one interface and routers typically have two or more interfaces.",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "T"
+	},
+	{
+	    "question" : "9. A gateway router must run both an intra-AS routing algorithm and an inter-AS routing algorithm.",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "T"
+	},
+	{
+	    "question" : "10. The network portion of an IP address is the same for all the hosts on the same IP network.",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "T"
+	}
+    ],
+    "mc" : [
+	{
+	    "question" : "1 . The link-state algorithm in Section 4.2 has the following properties:",
+	    "option1" : "a. after the kth iteration, theleast-cost paths are known to k nodes",
+	    "option2" : "b. it requires the source node to knowthe costs between every pair of adjacent nodes in the graph",
+	    "option3" : "c. it determines the shortest path fromthe source node to all other nodes",
+	    "option4" : "d. all of the above",
+	    "answer" : "D"
+	},
+	{
+	    "question" : "3 . In routing among ASs, which of the following issues dominants:",
+	    "option1" : "a. policy",
+	    "option2" : "b. number of ASs traversed",
+	    "option3" : "c. current congestion levels **********",
+	    "option4" : "d. geographical distance between ASs",
+	    "answer" : "A"
+	},
+	{
+	    "question" : "4 . Suppose an application generates chunks of 60 bytes of data every second, and eachchunk gets encapsulated in a TCP segment and then an IP datagram. Whatpercentage of each datagram will contain application data.",
+	    "option1" : "a. 20%",
+	    "option2" : "b. 60%",
+	    "option3" : "c. 80%",
+	    "option4" : "d. 40%",
+	    "answer" : "B"
+	},
+	{
+	    "question" : "5 . Consider sending a 1300 byte datagram into a link that has an MTU of 500 bytes.",
+	    "option1" : "a. Three fragments are created withoffsets 0, 500 1000",
+	    "option2" : "b. Three fragments are created, withoffsets 0, 460 and 920.",
+	    "option3" : "c. Three fragments are created withoffsets 0, 480 and 960.",
+	    "option4" : "d. None of the above",
+	    "answer" : "C"
+	},
+	{
+	    "question" : "6 . The ICMP protocol",
+	    "option1" : "a. runs on top of UDP",
+	    "option2" : "b. runs directly on top of IP",
+	    "option3" : "c. runs on top of TCP",
+	    "option4" : "d. none of the above",
+	    "answer" : "B"
+	},
+	{
+	    "question" : "7 . In a router, queuing can occur",
+	    "option1" : "a. in an interconnection network",
+	    "option2" : "b. in the output ports",
+	    "option3" : "c. in the input ports",
+	    "option4" : "d. all of the above",
+	    "answer" : "D"
+	},
+	{
+	    "question" : "8 . In a high-performance router, shadow copies of the routing table are kept in",
+	    "option1" : "a. the switching fabric",
+	    "option2" : "b. the output ports",
+	    "option3" : "c. the input ports",
+	    "option4" : "d. all of the above",
+	    "answer" : "C"
+	},
+	{
+	    "question" : "9 . Suppose a router has n input ports each with identical line speeds, n output ports eachwith identical line speeds, and the line speed of an output port is at least ntimes as that of an input port. Further suppose that the switching fabric speedis at least n times as fast as an input line speed. Then",
+	    "option1" : "a. queuing can occur in an output port",
+	    "option2" : "b. there is no queuing delay in the router",
+	    "option3" : "c. queuing can occur in an input port",
+	    "option4" : "d. queuing can occur in the switchingfabric",
+	    "answer" : "B"
+	},
+	{
+	    "question" : "As part of hierarchical routing, hot-potato routing does the following:",
+	    "option1" : "a. Labels suspicious packets as hot",
+	    "option2" : "b. Determines the number of ASes in the shortest AS path from router to destination.",
+	    "option3" : "c. Chooses the gateway that has the smallest cost.",
+	    "option4" : "d. Provides information to a router about the existence of external networks.",
+	    "answer" : "C"
+	}
+    ]
+}

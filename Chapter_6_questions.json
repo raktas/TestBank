@@ -1,0 +1,250 @@
+{
+    "t/f" : [
+	{
+	    "question" : "All link layer protocols that support IP have the same frame structure (i.e., length of frame, number and length of header fields).",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "F"
+	},
+	{
+	    "question" : "CRC error detection, as used in Ethernet, is always able to detect whether there is an error in a frame.",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "F"
+	},
+	{
+	    "question" : "The even parity bit scheme can correct single bit errors.",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "F"
+	},
+	{
+	    "question" : "With CDMA, each sender uses the same code, cm, m=1,...,M.",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "F"
+	},
+	{
+	    "question" : "Each LAN adapter has a unique LAN address.",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "T"
+	},
+	{
+	    "question" : "Consider a router with multiple ARP tables, one for each of its interfaces. No two of these ARP tables can contain the same LAN address.",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "T"
+	},
+	{
+	    "question" : "Consider a twisted-pair Ethernet in which all nodes are 50 meters from the hub. The time it takes for a bit to propagate from hub to node for a 10BaseT Ethernet is ten times longer then for a 100BaseT Ethernet.",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "F"
+	},
+	{
+	    "question" : "The entries in a switch table need to be configured by the network administrator.",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "F"
+	},
+	{
+	    "question" : "PPP excludes certain bit patterns in the network-layer packets that it carries.",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "F"
+	},
+	{
+	    "question" : "Consider the switched LAN architecture in Figure 5.24. Assuming all links are full duplex, there are never collisions in this LAN.",
+	    "option1" : "T",
+	    "option2" : "F",
+	    "answer" : "T"
+	}
+    ],
+    "mc" : [
+	{
+	    "question" : "A channel partitioning protocol has which of the following characteristics:",
+	    "option1" : "a. there is no master node",
+	    "option2" : "b. it does not generate collisions",
+	    "option3" : "c. all transmitting nodes get the same amount of bandwidth",
+	    "option4" : "d. all of the above",
+	    "answer" : "d. all of the above"
+	},
+	{
+	    "question" : "In slotted ALOHA with N active nodes, the probability that no node transmits in a given slot is",
+	    "option1" : "a. pN",
+	    "option2" : "b. (1-p)^N",
+	    "option3" : "c. (1-p)N",
+	    "option4" : "d. 1-p",
+	    "answer" : "b. (1-p)^N"
+	},
+	{
+	    "question" : "An ARP query packet is encapsulated in",
+	    "option1" : "a. an IP datagram",
+	    "option2" : "b. a link-layer frame addressed to a specific adapter",
+	    "option3" : "c. a link-layer broadcast frame",
+	    "option4" : "d. none of the above",
+	    "answer" : "c. a link-layer broadcast frame"
+	},
+	{
+	    "question" : "Ethernet provides which of the following services to the network layer",
+	    "option1" : "a. flow control",
+	    "option2" : "b. error detection",
+	    "option3" : "c. reliable data transfer",
+	    "option4" : "d. all of the above",
+	    "answer" : "b. error detection"
+	},
+	{
+	    "question" : "For Ethernet, if an adapter determines that a frame it has just received is addressed to a different adapter",
+	    "option1" : "a. it discards the frame without sending an error message to the network layer",
+	    "option2" : "b. it sends a NACK (not acknowledged frame) to the sending host",
+	    "option3" : "c. it delivers the frame to the network layer, and lets the network layer decide what to do",
+	    "option4" : "d. it discards the frame and sends an error message to the network layer",
+	    "answer" : "a. it discards the frame without sending an error message to the network layer"
+	},
+	{
+	    "question" : "In the Ethernet CSMA/CD protocol, suppose a node constructs a frame and then senses the channel as busy. Then",
+	    "option1" : "a. the adapter enters exponential backoff.",
+	    "option2" : "b. the adapter waits until it senses the channel idle and then begins to transmit the frame.",
+	    "option3" : "c. the adapter begins to transmit the frame.",
+	    "option4" : "d. none of the above",
+	    "answer" : "b. the adapter waits until it senses the channel idle and then begins to transmit the frame."
+	},
+	{
+	    "question" : "In CSMA/CD, after the 3rd collision, what is the probability that the value of K that a node chooses is 2?",
+	    "option1" : "a. .125",
+	    "option2" : "b. 0",
+	    "option3" : "c. .33",
+	    "option4" : "d. .25",
+	    "answer" : "a. .125"
+	},
+	{
+	    "question" : "A 10BaseT Ethernet LAN has",
+	    "option1" : "a. a linear topology (i.e., a bus)",
+	    "option2" : "b. a star topology",
+	    "option3" : "c. a ring topology",
+	    "option4" : "d. none of the above",
+	    "answer" : "b. a star topology"
+	},
+	{
+	    "question" : "When a switch transmits an Ethernet frame, the Ethernet frame has",
+	    "option1" : "a. the swtitch's LAN address for its source address",
+	    "option2" : "b. the broadcast address for the its source address",
+	    "option3" : "c. the swtitch's LAN address for its destination address",
+	    "option4" : "d. none of the above",
+	    "answer" : "d. none of the above"
+	},
+	{
+	    "question" : "The switch poisoning attack involves:",
+	    "option1" : "a. sending many packets to the switch with different bogus destination MAC addresses",
+	    "option2" : "b. sending many packets to the switch with different bogus source IP addresses",
+	    "option3" : "c. sending many packets to the switch with different bogus destination IP addresses",
+	    "option4" : "d. sending many packets to the switch with different bogus source MAC addresses",
+	    "answer" : "d. sending many packets to the switch with different bogus source MAC addresses"
+	},
+	{
+	    "question" : "A channel partitioning has which of the following characteristics?",
+	    "option1" : "a. there is no master node",
+	    "option2" : "b. it does not generate collisions",
+	    "option3" : "c. transmitting nodes get the same amount of bandwidth",
+	    "option4" : "d. all of the above",
+	    "answer" : "d. all of the above"
+	},
+	{
+	    "question" : "In slotted aloha with N=3 active nodes, and probability p=0.2 that a given node transmits, the long-term probability that any of the three active nodes has a successful transmission is:",
+	    "option1" : "a. 0.128",
+	    "option2" : "b. 0.384",
+	    "option3" : "c. 0.8",
+	    "option4" : "d. 0.04",
+	    "answer" : "b. 0.384"
+	},
+	{
+	    "question" : "An ARP query packet is encapsulated in",
+	    "option1" : "a. a link-layer broadcast frame",
+	    "option2" : "b. a link-layer frame addressed to a specific adapter",
+	    "option3" : "c. an IP broadcast diagram",
+	    "option4" : "d. none of the above",
+	    "answer" : "a. a link-layer broadcast frame"
+	},
+	{
+	    "question" : "IEEE standard ethernet CSMA/CD provides which of the following services to the network layer?",
+	    "option1" : "a. reliable data transfer",
+	    "option2" : "b. error detection",
+	    "option3" : "c. error correction",
+	    "option4" : "d. all of the above",
+	    "answer" : "b. error detection"
+	},
+	{
+	    "question" : "For ethernet, if an adapter determines that a frame it has just received is addressed to a different adapter",
+	    "option1" : "a. it discards the frame without sending an error message to the network layer",
+	    "option2" : "b. it discards the frame and sends an error message to the network layer",
+	    "option3" : "c. it sends a NACK (not acknowledge frame) to the sending host",
+	    "option4" : "d. it delivers the frame to the network layer, and ets the network layer decide what to do",
+	    "answer" : "a. it discards the frame without sending an error message to the network layer"
+	},
+	{
+	    "question" : "If the ethernet CSMA/CD protocol, suppose a node constructs a frame and then senses the channel is not busy",
+	    "option1" : "a. the adapter enters exponential back-off",
+	    "option2" : "b. the adapter begins to transmit the frame",
+	    "option3" : "c. the adapter waits until it sneses the channel idle and then begins to transmit the frame",
+	    "option4" : "d. none of the above",
+	    "answer" : "b. the adapter begins to transmit the frame"
+	},
+	{
+	    "question" : "In ethernet CSMA/CD, after the 1st collision, what is the possibility that the node will transmit after waiting 512 bit-times?",
+	    "option1" : "a. 0.125",
+	    "option2" : "b. 0.33",
+	    "option3" : "c. 0.5",
+	    "option4" : "d. 0.25",
+	    "answer" : "c. 0.5"
+	},
+	{
+	    "question" : "A 100BaseT ethernet LAN is configured on",
+	    "option1" : "a. a ring topology",
+	    "option2" : "b. a star topology",
+	    "option3" : "c. a linear (i.e. bus) topology",
+	    "option4" : "d. none of the above",
+	    "answer" : "b. a star topology"
+	},
+	{
+	    "question" : "When a switch transmits an ethernet frame to as receiving node, the ethernet frame has",
+	    "option1" : "a. the switch's LAN address as its source address",
+	    "option2" : "b. the switch's LAN address as its destination address",
+	    "option3" : "c. the broadcast address as its source address",
+	    "option4" : "d. none of the above",
+	    "answer" : "d. none of the above"
+	},
+	{
+	    "question" : "The switch table(s) in a 100Mbps ethernet LAN segment",
+	    "option1" : "a. contains the MAC addresses, IP addresses and port numbers for all nodes",
+	    "option2" : "b. must be configured by the LAN administrator",
+	    "option3" : "c. self-learns the ports associated with each attached node/MAC address as it switches frames",
+	    "option4" : "d. all of the above",
+	    "answer" : "c. self-learns the ports associated with each attached node/MAC address as it switches frames"
+	},
+	{
+	    "question" : "A virtual ethernet LAN that is configured to support multiple virtual LAN segments per switch using VLAN trunking",
+	    "option1" : "a. requires a special VLAN switch that supports segregation/isolation of ports into groups",
+	    "option2" : "b. must support the IEEE 802.1Q frame format",
+	    "option3" : "c. inserts the VLAN idenitifier in the ethernet frame following the destination MAC address",
+	    "option4" : "d. all of the above",
+	    "answer" : "d. all of the above"
+	},
+	{
+	    "question" : "In an MPLS label switch router, the forwarding action is based on",
+	    "option1" : "a. a label value found in the IP header options field",
+	    "option2" : "b. a label value placed before the IP packet in the link-layer frame",
+	    "option3" : "c. the 'best path' route as determined by the MPLS link-state routing algorithm",
+	    "option4" : "d. a self-learning switching table in the router",
+	    "answer" : "b. a label value placed before the IP packet in the link-layer frame"
+	},
+	{
+	    "question" : "Consider an ethernet 10BaseT LAN where collisions might occur. What is the impact of increasing frame size on LAN efficiency",
+	    "option1" : "a. efficiency increases as frame size increases",
+	    "option2" : "b. efficiency decreases as frame size increases",
+	    "option3" : "c. there is no impact since collisions will occur",
+	    "option4" : "d. none of the above",
+	    "answer" : "a. efficiency increases as frame size increases"
+	}
+    ]
+}
